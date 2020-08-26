@@ -449,7 +449,6 @@ body {
   background-color: #15141b;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-
 }
 .room-img {
   width: 100%;
@@ -470,14 +469,13 @@ body {
 .room-card-paragraph {
   font-size: 1.5rem;
   color: #777;
-
 }
 
 .room-price {
   font-size: 5rem;
   font-weight: 300;
   text-align: right;
-  margin:0;
+  margin: 0;
 }
 
 .room-card-btn {
@@ -505,18 +503,156 @@ body {
   background-color: transparent;
   text-transform: uppercase;
   color: #b85d1c;
-  border: .2rem solid #b85d1c;
+  border: 0.2rem solid #b85d1c;
   outline: none;
   cursor: pointer;
   border-radius: 20px;
-  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.2) ;
-  transition: all .2s;
+  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
 }
 
-.rooms-btn:hover{
+.rooms-btn:hover {
   color: #ddd;
   background-color: #b85d1c;
-
 }
 
 /* End of Rooms */
+
+/* Customer Review Section */
+.customers {
+  margin-left: 8rem;
+  padding-bottom: 7rem;
+  background-color: #15141b;
+}
+
+.customers-paragraph {
+  font-size: 1.8rem;
+  color: #ddd;
+  width: 50%;
+  margin: 2rem auto 8rem auto;
+  text-align: center;
+}
+
+.customers-card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.customer-card {
+  background-color: #eee;
+  width: 60rem;
+  display: flex;
+}
+
+.customer-image-wrapper {
+  margin: auto 0;
+}
+
+.customer-image {
+  width: 20rem;
+  margin-left: -1.3rem;
+}
+
+.customer-info {
+  padding: 0 2rem;
+
+}
+
+.customer-fullname {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.customer-paragraph-1 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #b85d1c;
+}
+
+.customer-paragraph-2 {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* Customer Review Section End */
+
+
+/* Footer Start */
+.footer{
+
+}
+
+.main-part{
+
+}
+
+.footer-list-wrapper{
+  
+}
+
+.footer-heading{
+  
+}
+
+.footer-list{
+  
+}
+
+.footer-list-item{
+  
+}
+
+
+.footer-list-link{
+  
+}
+
+.content{
+  
+}
+
+.footer-heading{
+  
+}
+
+.footer-form{
+
+}
+
+
+.footer-input{
+
+  
+}
+
+.footer-btn{
+
+
+}
+
+.gallery{
+
+}
+
+.gallery-images{
+
+}
+
+.image-wrapper{
+
+}
+
+.creater-part{
+
+}
+
+.copyright-text{
+  
+}
+
+.text-right{
+  
+}
+/* Footer End */

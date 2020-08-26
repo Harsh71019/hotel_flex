@@ -1,17 +1,15 @@
 /* common styles */
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
-/* end of common styles */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", san-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
-/*Navbar*/
-/*Sidebar*/
+/* sidebar */
 .sidebar {
   width: 8rem;
   height: 100%;
@@ -21,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .menu-icon {
@@ -38,7 +37,7 @@ body {
 .line-1,
 .line-3 {
   width: 1.8rem;
-  transition: width 0.3s;
+  transition: all 0.4s;
 }
 
 .menu-icon:hover .line {
@@ -70,12 +69,11 @@ body {
   font-size: 1.5rem;
   color: #555;
 }
-/*End of Sidebar*/
+/* end of sidebar */
 
-/*Navigation*/
 .navigation {
-  margin-left: 8rem;
   position: fixed;
+  left: -32rem;
   width: 40rem;
   height: 100%;
   background: linear-gradient(
@@ -89,10 +87,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
 .navigation-heading {
-  font-family: "Josefin Sans" sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 3.5rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -106,10 +105,9 @@ body {
 
 .navigation-search-input {
   width: 30rem;
-  height: 3rem;
-  padding: 1rem, 2rem;
+  padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.3);
-  font-family: "Josefin Sans" sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.6rem;
   color: #deaa86;
   letter-spacing: 0.1rem;
@@ -129,7 +127,7 @@ body {
   color: #deaa86;
   font-size: 1.7rem;
   position: absolute;
-  top: 0.8rem;
+  top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
@@ -150,7 +148,6 @@ body {
 
 .navigation-item {
   position: relative;
-
 }
 
 .navigation-link {
@@ -167,7 +164,7 @@ body {
   content: "";
   width: 0rem;
   height: 0.1rem;
-  color: #deaa86;
+  background-color: #deaa86;
   position: absolute;
   top: 1rem;
   left: -4rem;
@@ -178,7 +175,7 @@ body {
   content: "";
   width: 0rem;
   height: 0.1rem;
-  color: #deaa86;
+  background-color: #deaa86;
   position: absolute;
   top: 1rem;
   right: -4rem;
@@ -195,10 +192,25 @@ body {
 }
 
 .copyright {
-	color: #fff;
-	font-size: 1.2rem;
-	margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-/*End of Navigation*/
-/*End of Navbar*/
+.checkbox:checked ~ .navigation {
+  left: 8rem;
+}
+
+.checkbox:checked ~ .sidebar .line-1 {
+  transform: rotate(-405deg) translate(-5px, 6px);
+  width: 2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line-3 {
+  transform: rotate(405deg) translate(-5px, -6px);
+  width: 2.5rem;
+}

@@ -81,7 +81,7 @@ body {
       rgba(34, 32, 41, 1),
       rgba(34, 32, 41, 0.8)
     ),
-    url(../img/nav-bg.jpeg) center no-repeat;
+    url(../img/sidebar.jpg) center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -224,7 +224,7 @@ body {
   margin-left: 8rem;
   height: 100vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(../img/header-1.jpeg) center no-repeat;
+    url(../img/head.jpg) center no-repeat;
   background-size: cover;
 }
 
